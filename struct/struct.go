@@ -15,5 +15,5 @@ func main(){
 		email: "plain@plain.com",
 	}
 	
-	fmt.Println(p.name)
+	fmt.Println(p)
 }

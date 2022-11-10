@@ -7,9 +7,8 @@ import (
 
 // 
 func add(x,y int,doneFunc func())int{
-	defer func(){
-		doneFunc()
-	}()
+
+	defer doneFunc()
 	fmt.Printf("add(%d+%d)=%d\n",x,y,x+y)
 	return x+y
 }
