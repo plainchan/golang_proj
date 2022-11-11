@@ -13,7 +13,7 @@ func test_map_construct(){
 	}
 	roman[6]="VI"
 	roman[7]="VII"
-	fmt.Println(roman[7])
+	fmt.Println(roman)
 }
 
 
