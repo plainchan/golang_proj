@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 
-//延迟调用
-//在return后调用
+// 延迟调用
+// 在return后调用
 
 func test_defer() int{
 

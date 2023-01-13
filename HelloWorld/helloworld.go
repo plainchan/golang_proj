@@ -1,10 +1,11 @@
-package HelloWorld
+package main
 
 import (
 	"fmt"
-	// "github.com/gin-gonic/gin"
+	"reflect"
 )
 
 func main(){
+	fmt.Println(reflect.ValueOf("HelloWorld"))
 	fmt.Println("Hello World")
 }

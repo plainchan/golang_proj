@@ -23,10 +23,39 @@ func (person *Person)setName(name string){
 }
 
 
-func main(){
 
+func test_object(){
 	p:=newPerson("plain",18,"plain@plain.com")
 	fmt.Println(p.getName())
 	p.setName("plaingo")
 	fmt.Println(p.getName())
+}
+
+
+//实现继承
+type Woker struct{
+	Person    //匿名字段，实现继承
+	salary int
+	post string
+}
+
+func test_conmbination(){
+	
+	woker:=Woker{
+		Person:Person{
+			name:"plain",
+			age:18,
+			email:"plain@gmail.com",
+		},
+		salary:24000,
+		post:"research",
+	}
+	fmt.Println(woker.getName())
+	fmt.Println(woker)
+}
+
+
+
+func main(){
+	test_conmbination()
 }

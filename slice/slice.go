@@ -14,11 +14,15 @@ func test_construct(){
 }
 
 func test_append(){
+
 	arr := [] int {1,2,3}
-	fmt.Printf("%p\n",&arr)
-	arr = append(arr,4)
 	fmt.Printf("arr:%d  len:%d  capacity:%d\n",arr,len(arr),cap(arr))
-	fmt.Printf("%p\n",&arr)
+
+	arr = append(arr,[] int {4,5,6}...)
+	fmt.Printf("arr:%d  len:%d  capacity:%d\n",arr,len(arr),cap(arr))
+
+	arr = append(arr,7)
+	fmt.Printf("arr:%d  len:%d  capacity:%d\n",arr,len(arr),cap(arr))
 }
 
 
